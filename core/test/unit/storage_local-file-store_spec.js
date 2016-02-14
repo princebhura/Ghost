@@ -1,8 +1,6 @@
 /*globals describe, beforeEach, afterEach, it*/
-/*jshint expr:true*/
 var fs              = require('fs-extra'),
     path            = require('path'),
-    should          = require('should'),
     sinon           = require('sinon'),
     rewire          = require('rewire'),
     _               = require('lodash'),
@@ -10,9 +8,6 @@ var fs              = require('fs-extra'),
     localFileStore,
 
     configUtils     = require('../utils/configUtils');
-
-// To stop jshint complaining
-should.equal(true, true);
 
 describe('Local File System Storage', function () {
     var image;

@@ -1,11 +1,6 @@
 /*globals describe, it*/
-var should   = require('should'),
-
-    // Stuff we are testing
-    formatResponse = require('../../../../server/controllers/frontend/format-response');
-
-// To stop jshint complaining
-should.equal(true, true);
+// Stuff we are testing
+var formatResponse = require('../../../../server/controllers/frontend/format-response');
 
 describe('formatResponse', function () {
     describe('single', function () {

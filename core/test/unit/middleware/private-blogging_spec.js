@@ -1,15 +1,11 @@
 /*globals describe, beforeEach, afterEach, it*/
-/*jshint expr:true*/
 var crypto          = require('crypto'),
-    should          = require('should'),
     sinon           = require('sinon'),
     Promise         = require('bluebird'),
     privateBlogging = require('../../../server/middleware/private-blogging'),
     api             = require('../../../server/api'),
     errors          = require('../../../server/errors'),
     fs              = require('fs');
-
-should.equal(true, true);
 
 function hash(password, salt) {
     var hasher = crypto.createHash('sha256');
@@ -35,7 +31,8 @@ describe('Private Blogging', function () {
         var req, res, next;
 
         beforeEach(function () {
-            req = {}, res = {};
+            req = {};
+            res = {};
             apiSettingsStub = sandbox.stub(api.settings, 'read');
             next = sinon.spy();
         });

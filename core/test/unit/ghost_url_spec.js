@@ -1,11 +1,7 @@
 /* globals describe, beforeEach, afterEach, it */
-/*jshint expr:true*/
-var should     = require('should'),
-    ghostUrl   = require('../../shared/ghost-url'),
+var ghostUrl   = require('../../shared/ghost-url'),
 
     configUtils    = require('../utils/configUtils');
-
-should.equal(true, true);
 
 describe('Ghost Ajax Helper', function () {
     beforeEach(function () {

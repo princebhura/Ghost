@@ -1,7 +1,5 @@
 /*globals describe, it, beforeEach, afterEach */
-/*jshint expr:true*/
-var should = require('should'),
-    sinon = require('sinon'),
+var sinon = require('sinon'),
 
 // Thing we're testing
     // accessRules = require('../../../server/models/plugins/access-rules'),
@@ -9,9 +7,6 @@ var should = require('should'),
     ghostBookshelf,
 
     sandbox = sinon.sandbox.create();
-
-// To stop jshint complaining
-should.equal(true, true);
 
 describe('Access Rules', function () {
     beforeEach(function () {

@@ -1,16 +1,11 @@
 /*globals describe, afterEach, it*/
-/*jshint expr:true*/
-var should  = require('should'),
-    sinon   = require('sinon'),
+var sinon   = require('sinon'),
     Promise = require('bluebird'),
 
 // Stuff we are testing
     pipeline = require('../../server/utils/pipeline'),
 
     sandbox = sinon.sandbox.create();
-
-// To stop jshint complaining
-should.equal(true, true);
 
 // These tests are based on the tests in https://github.com/cujojs/when/blob/3.7.4/test/pipeline-test.js
 function createTask(y) {

@@ -1,16 +1,11 @@
 /*globals describe, it*/
-/*jshint expr:true*/
-var should          = require('should'),
-    _               = require('lodash'),
+var _               = require('lodash'),
     crypto          = require('crypto'),
 
     // Stuff we are testing
     schema          = require('../../server/data/schema'),
     permissions     = require('../../server/data/migration/fixtures/permissions/permissions'),
     defaultSettings = schema.defaultSettings;
-
-// To stop jshint complaining
-should.equal(true, true);
 
 describe('Migrations', function () {
     // Check version integrity

@@ -5,15 +5,9 @@
  */
 
 /*globals describe, it */
-/*jshint expr:true*/
-var should      = require('should'),
-
 // Stuff we are testing
-    Showdown    = require('showdown-ghost'),
+var Showdown    = require('showdown-ghost'),
     converter   = new Showdown.converter({extensions: ['ghostimagepreview', 'ghostgfm', 'footnotes', 'highlight']});
-
-// To stop jshint complaining
-should.equal(true, true);
 
 describe('Showdown client side converter', function () {
     /*jslint regexp: true */

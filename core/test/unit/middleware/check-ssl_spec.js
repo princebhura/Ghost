@@ -1,11 +1,7 @@
 /*globals describe, it, beforeEach, afterEach */
-/*jshint expr:true*/
 var sinon    = require('sinon'),
-    should   = require('should'),
     configUtils = require('../../utils/configUtils'),
     checkSSL = require('../../../server/middleware/check-ssl');
-
-should.equal(true, true);
 
 describe('checkSSL', function () {
     var res, req, next, sandbox;

@@ -1,16 +1,11 @@
 /*globals describe, beforeEach, afterEach, it*/
-/*jshint expr:true*/
 var nock            = require('nock'),
-    should          = require('should'),
     sinon           = require('sinon'),
     testUtils       = require('../utils'),
     xmlrpc          = require('../../server/data/xml/xmlrpc'),
     events          = require('../../server/events'),
     // storing current environment
     currentEnv      = process.env.NODE_ENV;
-
-// To stop jshint complaining
-should.equal(true, true);
 
 describe('XMLRPC', function () {
     var sandbox;

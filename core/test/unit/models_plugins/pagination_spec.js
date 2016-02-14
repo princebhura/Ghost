@@ -1,15 +1,10 @@
 /*globals describe, it, before, beforeEach, afterEach */
-/*jshint expr:true*/
-var should = require('should'),
-    sinon = require('sinon'),
+var sinon = require('sinon'),
     Promise = require('bluebird'),
     rewire = require('rewire'),
 
 // Thing we're testing
     pagination = rewire('../../../server/models/plugins/pagination');
-
-// To stop jshint complaining
-should.equal(true, true);
 
 describe('pagination', function () {
     var sandbox,

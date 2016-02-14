@@ -1,12 +1,8 @@
 /*globals describe, it, beforeEach, afterEach */
-/*jshint expr:true*/
 var sinon           = require('sinon'),
-    should          = require('should'),
     Promise         = require('bluebird'),
     api             = require('../../../server/api'),
     redirectToSetup = require('../../../server/middleware/redirect-to-setup');
-
-should.equal(true, true);
 
 describe('redirectToSetup', function () {
     var res, req, next, sandbox;

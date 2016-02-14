@@ -1,7 +1,5 @@
 /*globals describe, it, beforeEach, afterEach */
-/*jshint expr:true*/
 var sinon                   = require('sinon'),
-    should                  = require('should'),
     passport                = require('passport'),
     rewire                  = require('rewire'),
     configUtils             = require('../../utils/configUtils'),
@@ -20,8 +18,6 @@ var sinon                   = require('sinon'),
     },
 
     sandbox = sinon.sandbox.create();
-
-should.equal(true, true);
 
 function registerSuccessfulBearerStrategy() {
     // register fake BearerStrategy which always authenticates

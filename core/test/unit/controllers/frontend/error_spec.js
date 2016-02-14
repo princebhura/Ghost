@@ -1,16 +1,11 @@
 /*globals describe, beforeEach, afterEach, it*/
-/*jshint expr:true*/
-var should   = require('should'),
-    sinon    = require('sinon'),
+var sinon    = require('sinon'),
     errors   = require('../../../../server/errors'),
 
 // Stuff we are testing
     handleError = require('../../../../server/controllers/frontend/error'),
 
     sandbox = sinon.sandbox.create();
-
-// To stop jshint complaining
-should.equal(true, true);
 
 describe('handleError', function () {
     var next;

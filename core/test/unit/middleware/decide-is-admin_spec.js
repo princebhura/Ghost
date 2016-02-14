@@ -1,11 +1,6 @@
 /*globals describe, beforeEach, afterEach, it*/
-/*jshint expr:true*/
-var should          = require('should'),
-    sinon           = require('sinon'),
+var sinon           = require('sinon'),
     decideIsAdmin   = require('../../../server/middleware/decide-is-admin');
-
-// To stop jshint complaining
-should.equal(true, true);
 
 describe('Middleware: decideIsAdmin', function () {
     var sandbox,

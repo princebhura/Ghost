@@ -1,11 +1,7 @@
 /*globals describe, beforeEach, afterEach, it*/
-/*jshint expr:true*/
 var sinon           = require('sinon'),
-    should       = require('should'),
     uncapitalise    = require('../../../server/middleware/uncapitalise');
 require('should-sinon');
-
-should.equal(true, true);
 
 describe('Middleware: uncapitalise', function () {
     var sandbox,

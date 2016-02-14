@@ -1,7 +1,5 @@
 /*globals describe, it*/
-/*jshint expr:true*/
-var should          = require('should'),
-    parsePackageJson = require('../../server/utils/parse-package-json'),
+var parsePackageJson = require('../../server/utils/parse-package-json'),
     validateThemes  = require('../../server/utils/validate-themes'),
     readDirectory   = require('../../server/utils/read-directory'),
     readThemes      = require('../../server/utils/read-themes'),
@@ -10,9 +8,6 @@ var should          = require('should'),
     join            = require('path').join,
     rm              = require('rimraf-then'),
     fs              = require('fs');
-
-// To stop jshint complaining
-should.equal(true, true);
 
 describe('Server Utilities', function () {
     describe('Safe String', function () {
